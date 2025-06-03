@@ -15,4 +15,6 @@ jobs:
         uses: astral-sh/setup-uv@v5
       
       - name: run main.py
+        env:
+            APP_TOKEN: ${{ secrets.APP_TOKEN }}
         run: uv run main.py
