@@ -8,7 +8,7 @@ APP_TOKEN = os.environ["APP_TOKEN"]
 
 def main():
     with Socrata("data.ct.gov", APP_TOKEN) as client:
-        results = client.get("qhtt-czu2", limit=10, offset=10)
+        results = client.get("qhtt-czu2", limit=10, offset=20)
         lf = pl.LazyFrame(results)
         print(lf.collect())
 
