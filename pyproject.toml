@@ -5,11 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "polars>=1.30.0",
+    "polars>=1.39.3",
     "sodapy>=2.2.0",
 ]
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.2.0",
+    "pre-commit>=4.5.1",
 ]
